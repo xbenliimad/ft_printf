@@ -6,13 +6,13 @@
 /*   By: ibenli <ibenli@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 13:21:40 by ibenli            #+#    #+#             */
-/*   Updated: 2022/11/12 13:35:27 by ibenli           ###   ########.fr       */
+/*   Updated: 2022/11/12 14:53:51 by ibenli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putadress(char c, unsigned int p)
+int ft_putadress(char c, unsigned long p)
 {
     int n_c;
 
