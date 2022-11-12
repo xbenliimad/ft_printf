@@ -6,14 +6,14 @@
 /*   By: ibenli <ibenli@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 12:00:37 by ibenli            #+#    #+#             */
-/*   Updated: 2022/11/12 15:32:01 by ibenli           ###   ########.fr       */
+/*   Updated: 2022/11/12 17:29:40 by ibenli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int    ft_putchar(char c)
+int	ft_putchar(char c)
 {
-    write(1, &c, 1);
-    return (1);
+	write(1, &c, 1);
+	return (1);
 }

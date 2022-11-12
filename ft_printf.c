@@ -6,7 +6,7 @@
 /*   By: ibenli <ibenli@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 09:32:24 by ibenli            #+#    #+#             */
-/*   Updated: 2022/11/12 15:32:58 by ibenli           ###   ########.fr       */
+/*   Updated: 2022/11/12 21:00:12 by ibenli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,17 +31,15 @@ int	ft_handle_printf(char c, va_list ptr)
 		n_c += ft_puthexa(c, va_arg(ptr, unsigned int));
 	else if (c == 'p')
 		n_c += ft_putadress('x', va_arg(ptr, unsigned long));
-	else
-		n_c += ft_putchar(c);
 	return (n_c);
 }
 
 int	ft_printf(const char *str, ...)
 {
-	size_t		i;
-	size_t		n_c;
-	va_list		ptr_arg;
-	
+	int		i;
+	int		n_c;
+	va_list	ptr_arg;
+
 	if (!str)
 		return (-1);
 	va_start(ptr_arg, str);
@@ -50,11 +48,14 @@ int	ft_printf(const char *str, ...)
 	while (str[i])
 	{
 		if (str[i] == '%')
-			n_c += ft_handle_printf(str[++i], ptr_arg);
+		{
+			if (str[i + 1])
+				n_c += ft_handle_printf(str[++i], ptr_arg);
+		}
 		else
 			n_c += ft_putchar(str[i]);
 		i++;
-	}		
+	}
 	va_end(ptr_arg);
 	return (n_c);
 }

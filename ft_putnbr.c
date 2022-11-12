@@ -6,7 +6,7 @@
 /*   By: ibenli <ibenli@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 12:37:32 by ibenli            #+#    #+#             */
-/*   Updated: 2022/11/12 12:26:39 by ibenli           ###   ########.fr       */
+/*   Updated: 2022/11/12 17:28:08 by ibenli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_putnbr(int n)
 {
-	int n_c;
+	int	n_c;
 
 	n_c = 0;
 	if (n == -2147483648)
@@ -34,6 +34,5 @@ int	ft_putnbr(int n)
 	}
 	else if (n >= 0 && n <= 9)
 		n_c += ft_putchar(n + '0');
-
 	return (n_c);
 }
