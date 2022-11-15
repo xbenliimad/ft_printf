@@ -6,7 +6,7 @@
 /*   By: ibenli <ibenli@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 09:32:24 by ibenli            #+#    #+#             */
-/*   Updated: 2022/11/15 15:21:33 by ibenli           ###   ########.fr       */
+/*   Updated: 2022/11/15 18:30:12 by ibenli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,6 @@ int	ft_printf(const char *str, ...)
 	int		n_c;
 	va_list	ptr_arg;
 
-	if (!str)
-		return (-1);
 	va_start(ptr_arg, str);
 	i = 0;
 	n_c = 0;

@@ -6,17 +6,15 @@
 /*   By: ibenli <ibenli@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 09:35:43 by ibenli            #+#    #+#             */
-/*   Updated: 2022/11/12 17:29:13 by ibenli           ###   ########.fr       */
+/*   Updated: 2022/11/15 18:30:05 by ibenli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include <stdio.h>
 # include <unistd.h>
 # include <stdarg.h>
-# include <limits.h>
 
 int	ft_printf(const char *str, ...);
 int	ft_putchar(char c);
